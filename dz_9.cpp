@@ -1,15 +1,16 @@
 #include<iostream>
 #include<format>
 using namespace std;
-int i=6, n=8, m=4;
+int n=1, m=9;
 int main() {
-   do {
-    cout << i << ' ' << n << ' ' << m << "|\n";
-    i += 1;
-    n*= -i;
-    m *= 2;
+   while (n<m) {
+    cout << n << ' ' << m << "|\n";
+    ++n;
+    if (n %5==1) {
+        break;
+    }
    }
-    while (n<m);
-    cout << i << ' ' << n << ' ' << m << "|\n";
+   n=+2;
+    cout << n << ' ' << m << "|\n";
     return 0;
 }
